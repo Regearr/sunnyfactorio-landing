@@ -6,51 +6,45 @@
     <title>SunnyFactorio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(270deg, #ffcc00, #ff9900);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            font-family: Arial, sans-serif;
+            color: #fff;
             text-align: center;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-        .header {
-            background-color: #ffcc00;
-            padding: 20px;
-        }
-        .header h1 {
-            margin: 0;
-            color: #333;
-        }
+
         .content {
-            margin-top: 20px;
-        }
-        .content p {
-            font-size: 18px;
-            color: #666;
-        }
-        .footer {
-            margin-top: 40px;
             padding: 20px;
-            background-color: #333;
-            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="content">
         <h1>Добро пожаловать в SunnyFactorio</h1>
-    </div>
-    <div class="container">
-        <div class="content">
-            <p>Мы занимаемся созданием модпаков и игровых серверов для Minecraft. Присоединяйтесь к нам и наслаждайтесь уникальными игровыми приключениями!</p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>&copy; 2024 SunnyFactorio</p>
+        <p>Мы занимаемся созданием модпаков и игровых серверов для Minecraft. Присоединяйтесь к нам и наслаждайтесь уникальными игровыми приключениями!</p>
     </div>
 </body>
 </html>
